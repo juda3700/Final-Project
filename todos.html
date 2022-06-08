@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Todos List</title>
+        <link rel="stylesheet" href="common/style.css">
+        <script src="common/lib.js"></script>
+        <script src="common/model.js"></script>
+    </head>
+    <body>
+        <!-- The content of this heading will be filled in later by the JavaScript -->
+        <h3 id="heading"></h3>
+
+        <table id="todo-table">
+            <tr>
+                <th>Description</th>
+                <th>Due</th>
+                <th>Complete?</th>
+                <th>Delete</th>
+            </tr>
+
+            <!-- The JavaScript will insert more table rows here -->
+
+        </table>
+
+        <h3>Add a Todo:</h3>
+        <p>
+            Description: <input id="new-todo-desc"></input><br>
+            Due Date: <input id="new-todo-due"></input><br>
+            <button onclick="addTodo()">Add</button>
+        </p>
+
+        <p><a href="categories.html">Back to List of Categories</a></p>
+
+        <script src="todos.js"></script>
+    </body>
+</html>
+

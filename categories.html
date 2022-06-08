@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Categories List</title>
+        <link rel="stylesheet" href="common/style.css">
+        <script src="common/lib.js"></script>
+        <script src="common/model.js"></script>
+    </head>
+
+    <body>
+        <h3>To-do Categories</h3>
+
+        <ul id="cat-list">
+            <!-- JavaScript will populate this list -->
+        </ul>
+
+        <p>Add a Category:
+            <input id="new-category"></input>
+            <button onclick="addCat()">Add</button> <!-- addCat() is in categories.js -->
+        </p>
+
+        <p>
+            <!-- clearLocal is defined in common/lib.js - clears the browser storage -->
+            <button onclick="clearLocal(); location.reload()">Reset</button>
+        </p>
+
+        <script src="categories.js"></script>
+    </body>
+
+</html>
+
