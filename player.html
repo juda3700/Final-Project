@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Todos List</title>
+        <title> Player List</title>
         <link rel="stylesheet" href="common/style.css">
         <script src="common/lib.js"></script>
         <script src="common/model.js"></script>
@@ -12,11 +12,11 @@
         <!-- The content of this heading will be filled in later by the JavaScript -->
         <h3 id="heading"></h3>
 
-        <table id="todo-table">
+        <table id="lineup-table">
             <tr>
-                <th>Description</th>
-                <th>Due</th>
-                <th>Complete?</th>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Number</th>
                 <th>Delete</th>
             </tr>
 
@@ -24,16 +24,16 @@
 
         </table>
 
-        <h3>Add a Todo:</h3>
+        <h3>Change a player:</h3>
         <p>
-            Description: <input id="new-todo-desc"></input><br>
-            Due Date: <input id="new-todo-due"></input><br>
-            <button onclick="addTodo()">Add</button>
+            Description: <input id="new-player-name"></input><br>
+            Due Date: <input id="new-player-position"></input><br>
+            <button onclick="addplayer()">Add</button>
         </p>
 
-        <p><a href="categories.html">Back to List of Categories</a></p>
+        <p><a href="teams.html">Back to List of Categories</a></p>
 
-        <script src="todos.js"></script>
+        <script src="teams.js"></script>
     </body>
 </html>
 

@@ -1,32 +1,32 @@
 // This is the default data to use if none is found in the browser's local storage
-let defaultCats = [
+let defaultTeams = [
     {
-        name: "Home",
-        todos: [
+        name: "Toronto Blue Jays",
+        players: [
             {
-                desc: "Cut Grass",
-                due: "May 24",
-                isDone: false
+                name: "Cut Grass",
+                position: "May 24",
+                number: false
             },
             {
-                desc: "Rake Leaves",
-                due: "May 24",
-                isDone: true
+                name: "Rake Leaves",
+                position: "May 24",
+                number: true
             }
         ]
     },
     {
-        name: "Work",
+        name: "New York Yankees",
         todos: [
             {
-                desc: "Mark Grade 12 Assignments",
-                due: "ASAP",
-                isDone: false
+                name: "Mark Grade 12 Assignments",
+                position: "ASAP",
+                number: false
             },
             {
-                desc: "Prepare Project",
-                due: "May 18",
-                isDone: false
+                name: "Prepare Project",
+                position: "May 18",
+                number: false
             }
         ]
     }
@@ -34,4 +34,4 @@ let defaultCats = [
 
 // Set "cats" (short for "categories") to the data found in the browser's local storage.
 // If none is found, use "defaultCats"
-let cats = loadLocal(defaultCats)
+let teams = loadLocal(defaultTeams)
